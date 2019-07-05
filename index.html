@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css" ><link>
+</head>
+<body>
+  <div class="calculator">
+
+    <div id="showvalue">0</div>
+  
+    <div class="calculator-buttons">
+      <button class="calc-button is-clear" value="AC" onclick="reset(this)">AC</button>
+      <button class="calc-button is-return" value="CE" onclick="goBack(this)">CE</button>
+      <button class="calc-button" value="/" onclick="insert(this)">&divide;</button> 
+      <button class="calc-button" value="*" onclick="insert(this)">&times;</button>
+  
+      <button class="calc-button" value="7" onclick="insert(this)">7</button>
+      <button class="calc-button" value="8" onclick="insert(this)">8</button>
+      <button class="calc-button" value="9" onclick="insert(this)">9</button>
+      <button class="calc-button" value="-" onclick="insert(this)">&minus;</button>
+  
+      <button class="calc-button" value="4" onclick="insert(this)">4</button>
+      <button class="calc-button" value="5" onclick="insert(this)">5</button>
+      <button class="calc-button" value="6" onclick="insert(this)">6</button>
+      <button class="calc-button" value="+" onclick="insert(this)">&plus;</button>
+  
+      <button class="calc-button" value="1" onclick="insert(this)">1</button>
+      <button class="calc-button" value="2" onclick="insert(this)">2</button>
+      <button class="calc-button" value="3" onclick="insert(this)">3</button>
+      <button class="calc-button is-equals" value="=" onclick="result(this)">&equals;</button>
+  
+      <button class="calc-button is-zero" value="0" onclick="insert(this)">0</button>
+      <button class="calc-button" value="." onclick="insert(this)">.</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
