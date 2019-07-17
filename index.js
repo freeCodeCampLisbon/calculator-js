@@ -1,7 +1,8 @@
 let button = "";
+
 function insert(btn) {
     button = button + btn.value;
-    //console.log(button);
+    console.log(button);
     document.getElementById('showvalue').innerHTML = button;
 }
 
@@ -15,6 +16,12 @@ function reset() {
 }
 
 function goBack() {
-    button = button.replace(button.slice(-1), "");
-    document.getElementById('showvalue').innerHTML = button;
+    button = button.slice(0, -1);
+
+    if(button == ""){
+        return document.getElementById('showvalue').innerHTML = "0";
+    }
+    else{
+        return document.getElementById('showvalue').innerHTML = button;
+    }
 }
